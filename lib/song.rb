@@ -18,8 +18,14 @@ class Song
     
   end 
   
-  def self. artist_name 
-    
+  def artist_name= (name) 
+    if (self.artist.nil?)
+      self.artist = Arstist.new(name)
+    else
+      self.artist.name = name
+    end 
+  end 
+end 
     
   end 
   
