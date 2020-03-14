@@ -18,6 +18,12 @@ class Song
     
   end 
   
+  def self. artist_name 
+    
+    
+  end 
+  
+  
   
   
 end 
