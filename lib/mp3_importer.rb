@@ -1,7 +1,13 @@
 class MP3Importer 
   
-  def initialize(test_music_path)
-    @test_music_path = test_music_path
+  attr_accessor :path 
+  
+  def initialize(path)
+    @path = path
+  end 
+  
+  def files 
+    @files || = DIR.entries(@path).select{|song| !File.directory?(song) && song.end_with?(".mp3")}
   end 
   
   def import(list_of_filenames)
