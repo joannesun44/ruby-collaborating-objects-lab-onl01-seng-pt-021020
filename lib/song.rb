@@ -25,8 +25,6 @@ class Song
       self.artist.name = name
     end 
   end 
-end 
-end
     
   end 
   
