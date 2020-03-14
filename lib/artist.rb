@@ -36,12 +36,15 @@ class Artist
     self.new(name).tap{|artist| artist.save}
   end 
   
-  
-  
-  
-  def print_songs
-    
+  def save
+    @@all << self 
   end 
+  
+  
+  
+  # def print_songs
+    
+  # end 
   
     
   
